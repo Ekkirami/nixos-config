@@ -68,6 +68,7 @@
     ethtool
     pciutils
     usbutils
+    niri
   ];
 
   programs.git = {

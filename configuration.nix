@@ -19,6 +19,15 @@
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
 
+  services.xserver.enable = true;
+  services.xserver.videoDrivers = [ "modesetting" ];
+
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+
   time.timeZone = "Asia/Shanghai";
 
   i18n.defaultLocale = "zh_CN.UTF-8";
