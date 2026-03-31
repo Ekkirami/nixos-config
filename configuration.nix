@@ -74,6 +74,10 @@
      axel
      btop
      tree
+     zsh
+     curl
+     htop
+     tmux
   ];
   environment.variables.EDITOR = "nvim";
 
