@@ -66,6 +66,7 @@
     tmux
   ];
   environment.variables.EDITOR = "nvim";
+  programs.zsh.enable = true;
 
   services.openssh = {
     enable = true;
