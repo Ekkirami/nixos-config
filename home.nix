@@ -6,7 +6,7 @@
 
   home.packages = with pkgs; [
     # 系统信息和终端
-    neofetch
+    fastetch
     nnn
     alacritty
 
