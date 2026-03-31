@@ -135,6 +135,9 @@
     # zshrc
     initExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
+      zstyle :compinstall filename '/home/ekkirami/.zshrc'
+      autoload -Uz compinit
+      compinit
     '';
 
     # 别名
