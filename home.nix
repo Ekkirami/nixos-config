@@ -129,21 +129,21 @@
     };
   };
 
-  # programs.zsh = {
-  #   enable = true;
-  #   enableCompletion = true;
-  #   # zshrc
-  #   zshrcExtra = ''
-  #     export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
-  #   '';
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    # zshrc
+    zshrcExtra = ''
+      export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
+    '';
 
-  #   # 别名
-  #   shellAliases = {
-  #     vim = "nvim";
-  #     urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
-  #     urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
-  #   };
-  # };
+    # 别名
+    shellAliases = {
+      vim = "nvim";
+      urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
+      urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
+    };
+  };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
