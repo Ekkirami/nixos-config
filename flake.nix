@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.Rami-Nix = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
