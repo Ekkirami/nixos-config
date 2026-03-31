@@ -1,1 +1,1 @@
-# nix-dotfile
+# nixos-config
