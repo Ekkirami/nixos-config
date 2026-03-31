@@ -133,7 +133,7 @@
     enable = true;
     enableCompletion = true;
     # zshrc
-    zshrcExtra = ''
+    initExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
 
