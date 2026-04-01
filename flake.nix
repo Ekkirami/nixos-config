@@ -18,13 +18,14 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, quickshell, noctalia ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, quickshell, noctalia, ... }@inputs: {
     nixosConfigurations.Rami-Nix = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
         ./noctalia.nix
+        ./chinese.nix
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
