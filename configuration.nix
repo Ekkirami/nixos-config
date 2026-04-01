@@ -73,6 +73,7 @@
     htop
     tmux
     qt6.qtwayland
+    wayland
   ];
   environment.variables.EDITOR = "nvim";
   programs.zsh.enable = true;
