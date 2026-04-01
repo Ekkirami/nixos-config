@@ -78,7 +78,7 @@
   };
 
   services.xserver.enable = true;  # 启用X11窗口系统
-  # services.desktopManager.gnome.enable = true;  # 启用GNOME桌面环境
+  services.desktopManager.gnome.enable = true;  # 启用GNOME桌面环境
   services.displayManager.gdm.enable = true;  # 启用GDM显示管理器（GNOME登录界面）
   services.xserver.xkb.layout = "us";  # 设置X11键盘布局为美式
   programs.niri.enable = true;  # 启用Niri Wayland合成器（作为GNOME的替代或补充）
