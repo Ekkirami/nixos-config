@@ -74,6 +74,7 @@
     tmux
     qt6.qtwayland
     wayland
+    xcb
   ];
   environment.variables.EDITOR = "nvim";
   programs.zsh.enable = true;
