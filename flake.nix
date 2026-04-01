@@ -19,12 +19,11 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
-        ./noctalia.nix
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "backup";
-          home-manager.users.ekkirami = import ./home.nix;
+          home-manager.users.ekkirami = import ./home.nix inputs;
         }
       ];
     };

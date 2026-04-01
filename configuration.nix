@@ -74,7 +74,12 @@
     tmux
     qt6.qtwayland
     wayland
-    xcb
+    libxcb
+    xorg.libX11
+    xorg.libXcursor
+    xorg.libXrandr
+    xorg.libXinerama
+    xorg.libXext
   ];
   environment.variables.EDITOR = "nvim";
   programs.zsh.enable = true;
