@@ -72,10 +72,6 @@
     curl
     htop
     tmux
-    libxcb
-    xcb_util_cursor
-    xcb_util_wm
-    xcb_util_keysyms
     qt6.qtwayland
   ];
   environment.variables.EDITOR = "nvim";
