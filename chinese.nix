@@ -22,7 +22,7 @@
     enable = true;
     type = "fcitx5";
     fcitx5.addons = with pkgs; [
-    qt6Packages.fcitx5-chinese-addon
+    fcitx5-chinese-addon
    ];
    fcitx5.waylandFrontend = true;
   };
