@@ -22,10 +22,11 @@
   services.xserver.enable = true;
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.wayland.enable = true;
-  services.xserver.desktopManager.plasma5.enable = false;
 
   hardware.opengl = {
     enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
   };
 
   time.timeZone = "Asia/Shanghai";
