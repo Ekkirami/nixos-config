@@ -19,14 +19,6 @@
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
 
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.wayland.enable = true;
-
-  hardware.opengl = {
-    enable = true;
-  };
-
   time.timeZone = "Asia/Shanghai";
 
   i18n.defaultLocale = "zh_CN.UTF-8";
@@ -72,14 +64,6 @@
     curl
     htop
     tmux
-    qt6.qtwayland
-    wayland
-    libxcb
-    xorg.libX11
-    xorg.libXcursor
-    xorg.libXrandr
-    xorg.libXinerama
-    xorg.libXext
   ];
   environment.variables.EDITOR = "nvim";
   programs.zsh.enable = true;
