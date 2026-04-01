@@ -73,9 +73,9 @@
     htop
     tmux
     libxcb
-    xcb-util-cursor
-    xcb-util-wm
-    xcb-util-keysyms
+    xcb_util_cursor
+    xcb_util_wm
+    xcb_util_keysyms
     qt6.qtwayland
   ];
   environment.variables.EDITOR = "nvim";
