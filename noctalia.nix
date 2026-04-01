@@ -53,12 +53,11 @@
         };
         colorSchemes.predefinedScheme = "Monochrome";
         general = {
-          avatarImage = "/home/drfoobar/.face";
           radiusRatio = 0.2;
         };
         location = {
           monthBeforeDay = true;
-          name = "Marseille, France";
+          name = "Shanghai, China";
         };
       };
       # this may also be a string or a path to a JSON file.
