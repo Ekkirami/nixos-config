@@ -9,6 +9,7 @@
     fastfetch
     nnn
     alacritty
+    kitty
 
     # 压缩工具
     zip
