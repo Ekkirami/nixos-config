@@ -21,23 +21,23 @@
 
   time.timeZone = "Asia/Shanghai";
 
-  i18n.defaultLocale = "zh_CN.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "zh_CN.UTF-8";
-    LC_IDENTIFICATION = "zh_CN.UTF-8";
-    LC_MEASUREMENT = "zh_CN.UTF-8";
-    LC_MONETARY = "zh_CN.UTF-8";
-    LC_NAME = "zh_CN.UTF-8";
-    LC_NUMERIC = "zh_CN.UTF-8";
-    LC_PAPER = "zh_CN.UTF-8";
-    LC_TELEPHONY = "zh_CN.UTF-8";
-    LC_TIME = "zh_CN.UTF-8";
-  };
+  # i18n.defaultLocale = "zh_CN.UTF-8";
+  # i18n.extraLocaleSettings = {
+  #   LC_ADDRESS = "zh_CN.UTF-8";
+  #   LC_IDENTIFICATION = "zh_CN.UTF-8";
+  #   LC_MEASUREMENT = "zh_CN.UTF-8";
+  #   LC_MONETARY = "zh_CN.UTF-8";
+  #   LC_NAME = "zh_CN.UTF-8";
+  #   LC_NUMERIC = "zh_CN.UTF-8";
+  #   LC_PAPER = "zh_CN.UTF-8";
+  #   LC_TELEPHONY = "zh_CN.UTF-8";
+  #   LC_TIME = "zh_CN.UTF-8";
+  # };
 
-  services.xserver.xkb = {
-    layout = "cn";
-    variant = "";
-  };
+  # services.xserver.xkb = {
+  #   layout = "cn";
+  #   variant = "";
+  # };
 
   users.users.ekkirami = {
     isNormalUser = true;
@@ -75,6 +75,22 @@
       PasswordAuthentication = true;
       PermitRootLogin = "yes";
     };
+  };
+
+  services.xserver.enable = true;  # 启用X11窗口系统
+  services.desktopManager.gnome.enable = true;  # 启用GNOME桌面环境
+  services.displayManager.gdm.enable = true;  # 启用GDM显示管理器（GNOME登录界面）
+  services.xserver.xkb.layout = "us";  # 设置X11键盘布局为美式
+  programs.niri.enable = true;  # 启用Niri Wayland合成器（作为GNOME的替代或补充）
+  programs.firefox.enable = true;  # 启用Firefox浏览器
+
+  services.pulseaudio.enable = false;  # 禁用PulseAudio（使用PipeWire替代）
+  security.rtkit.enable = true;  # 启用RTKit实时内核支持（用于音频权限）
+  services.pipewire = {
+    enable = true;  # 启用PipeWire多媒体框架
+    alsa.enable = true;  # 启用PipeWire的ALSA兼容层
+    alsa.support32Bit = true;  # 支持32位ALSA应用
+    pulse.enable = true;  # 启用PulseAudio兼容层
   };
 
   networking.firewall.enable = false;
